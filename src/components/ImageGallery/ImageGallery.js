@@ -6,6 +6,7 @@ import pixabayApi from '../../services/pixabayAPI';
 import {Component} from 'react';
 import Modal from '../Modal/Modal';
 import Button from '../Button/Button';
+import PropTypes from 'prop-types';
 
 class ImageGallery extends Component {
     state = {
@@ -85,6 +86,10 @@ class ImageGallery extends Component {
             </>
         )
     }
+}
+
+ImageGallery.propTypes = {
+    value: PropTypes.string,
 }
 
 export default ImageGallery;
